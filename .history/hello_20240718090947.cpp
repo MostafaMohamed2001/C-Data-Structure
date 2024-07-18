@@ -51,8 +51,8 @@ void displayNodes(){
     while (current != nullptr) {
         cout << current->data << " ";
         current = current->next;
-    }
-    cout << endl;
+    } 
+    cout
 }
 
 void deleteNode(int val){

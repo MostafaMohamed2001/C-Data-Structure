@@ -2,29 +2,28 @@
 #include <string>
 using namespace std;
 
-
 struct node
 {
     int data; 
     node *next;
-
 };
+
 node *head;
 
 void insertNode(int val);
 void displayNodes();
-void deleteNode(int val);
+void deleteNode();
 int main()
 
-{
+
     insertNode(10);
+{
     insertNode(20);
     insertNode(30);
     insertNode(40);
 
   displayNodes();
-  deleteNode(40);
-  displayNodes();
+
 }
 
 void insertNode(int val){
@@ -51,23 +50,12 @@ void displayNodes(){
     while (current != nullptr) {
         cout << current->data << " ";
         current = current->next;
-    }
-    cout << endl;
+    } 
 }
 
-void deleteNode(int val){
+void deleteNode(){
     node *current = head;
     node *prev = head;
 
-    if(current -> data == val){
-        head = current->next;
-        free(current);
-        return;
-    }
-    while(current->data != val){
-        prev = current;
-        current = current->next;
-    }
-    prev->next = current->next;
-    free(current);
+    if(current -> val)
 }
