@@ -21,7 +21,7 @@ int main()
     insertNode(30);
     insertNode(40);
 
-  displayNodes();
+  displayNodes()
 
 }
 

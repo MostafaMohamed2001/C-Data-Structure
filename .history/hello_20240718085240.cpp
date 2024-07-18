@@ -12,7 +12,7 @@ struct node
 node *head;
 
 void insertNode(int val);
-void displayNodes();
+
 int main()
 
 {
@@ -21,8 +21,7 @@ int main()
     insertNode(30);
     insertNode(40);
 
-  displayNodes();
-
+    displayNodes();
 }
 
 void insertNode(int val){
