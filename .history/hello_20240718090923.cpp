@@ -23,8 +23,8 @@ int main()
     insertNode(40);
 
   displayNodes();
-  deleteNode(40);
-  displayNodes();
+  delete()
+
 }
 
 void insertNode(int val){
@@ -51,8 +51,7 @@ void displayNodes(){
     while (current != nullptr) {
         cout << current->data << " ";
         current = current->next;
-    }
-    cout << endl;
+    } 
 }
 
 void deleteNode(int val){
